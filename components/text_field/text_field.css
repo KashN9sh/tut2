@@ -1,0 +1,24 @@
+.text_field{
+  width: 320px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-indent: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  }
+
+.subscription{
+  width: 260px;
+  height: 44px;
+}
+
+.text_field:hover{
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.text_field:focus{
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}

@@ -1,0 +1,10 @@
+include ./components/text_field/text_field
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Пример страницы
+    link(rel="stylesheet" type="text/css" href="main.css")
+  body
+    h3(class= text_field) FILTER
+    +text_field({placehold:'Email',type:'subscription'})
