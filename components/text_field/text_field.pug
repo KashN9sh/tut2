@@ -3,6 +3,9 @@ mixin text_field(options)
     var ClassName="text_field"
     ClassName +=" "+options.type
   p(class=ClassName)
-    input.text(placeholder=options.placehold)
+    if options.type=='masked'
+      input.text(type="date",placeholder=options.placehold)
+    else
+      input.text(placeholder=options.placehold)
     if options.type=='subscription'
       <input class="material_icons" type="submit" value="arrow_forward">

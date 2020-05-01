@@ -19,10 +19,19 @@
   border:none;
   outline: none;
   padding: 0px;
+  font-family: Montserrat-Light,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color:rgba(31, 32, 65, 0.75);
 }
 
 .text_field:focus-within{
   border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+::-webkit-datetime-edit{
+  text-transform:uppercase;
+  color: rgba(31, 32, 65, 0.25);
 }
 
 .subscription{
@@ -32,4 +41,29 @@
 
 .text_field:hover{
   border: 1px solid rgba(31, 32, 65, 0.5);
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.text_field:hover>::placeholder{
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.text_field:hover>::-webkit-datetime-edit{
+  color: rgba(31, 32, 65, 0.75);
+}
+
+::placeholder{
+  height: 44px;
+  font-family: Montserrat-Light,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+:focus-within::placeholder{
+  color: rgba(31, 32, 65, 0.75);
+}
+
+:hover::placeholder{
+  color: rgba(31, 32, 65, 0.75);
 }
