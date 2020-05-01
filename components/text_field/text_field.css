@@ -10,15 +10,26 @@
   line-height: 18px;
   }
 
+.text{
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-right: 5px;
+  height: 18px;
+  width: 77%;
+  border:none;
+  outline: none;
+  padding: 0px;
+}
+
+.text_field:focus-within{
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
 .subscription{
   width: 260px;
   height: 44px;
 }
 
 .text_field:hover{
-  border: 1px solid rgba(31, 32, 65, 0.5);
-}
-
-.text_field:focus{
   border: 1px solid rgba(31, 32, 65, 0.5);
 }
