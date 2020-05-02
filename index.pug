@@ -1,13 +1,18 @@
 include ./components/text_field/text_field
+include ./components/dropdown/dropdown
+
 doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
     title Пример страницы
     link(rel="stylesheet" type="text/css" href="main.css")
+    <script src="components/dropdown/dropdown.js"></script>
   body
     h3(class= text_field) FILTER
     +text_field({placehold:'Email',type:'subscription'})
     +text_field({type:'masked'})
     +text_field({placehold:'Имя'})
     p.material_icons expand_more
+    +dropdown({})
+    +dropdown({})
