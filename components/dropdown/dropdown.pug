@@ -2,12 +2,18 @@ mixin dropdown(options)
   -
     var ClassName="dropdown"
     ClassName +="  "+options.type
+
   div(class=ClassName)
-    <button onclick="drop(this.id)" class="dropbtn">Dropdown</button>
-    <div class="dropdown-content" >
+    button.dropbtn(onclick='drop(this.id)',class=options.type)=options.text
+    <button onclick="drop(this.id)" class="material_icons drop_icon">expand_more</button>
+    div.dropdown-content(class=options.type)
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
       <a href="#contact">Contact</a>
-    </div>
+  if options.type=='date'
+    div(class=ClassName)
+      button.dropbtn(onclick='drop(this.id)',class=options.type)=options.text
+      <button onclick="drop(this.id)" class="material_icons drop_icon">expand_more</button>
+      div.dropdown-content(class=options.type)
     

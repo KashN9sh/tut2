@@ -6,11 +6,12 @@
   box-sizing: border-box;
   border-radius: 4px;
   text-indent: 10px;
-  font-size: 14px;
+
   line-height: 18px;
   }
 
 .text{
+  font-size: 14px;
   margin-top: 12px;
   margin-bottom: 12px;
   margin-right: 5px;
@@ -44,11 +45,7 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
-.text_field:hover>::placeholder{
-  color: rgba(31, 32, 65, 0.75);
-}
-
-.text_field:hover>::-webkit-datetime-edit{
+.text_field:hover>::placeholder , .text_field:hover>::-webkit-datetime-edit{
   color: rgba(31, 32, 65, 0.75);
 }
 
