@@ -31,12 +31,6 @@
   border-radius: 4px;
 }
 
-.date{
-  width: 150px;
-}
-.date .dropbtn {
-  width: 70%;
-}
 .dropdown-content {
   width: 318px;
   display: none;

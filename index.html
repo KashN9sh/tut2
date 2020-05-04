@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <title>Пример страницы</title>
-    <link rel="stylesheet" type="text/css" href="main.css"><script src="components/dropdown/dropdown.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="extensions/lightpick.js"></script>
   </head>
   <body>
     <h3>FILTER</h3>
     <p class="text_field subscription">
       <input class="text" placeholder="Email"/><input class="material_icons" type="submit" value="arrow_forward">
-    </p>
+    </p><div class="col-md-5">
+<div class="d-flex">
+<input type="text" id="date-start" class="date">
+<input type="text" id="date-end" class="date">
+</div>
+</div>
     <p class="text_field masked">
       <input class="text" type="date"/>
     </p>
@@ -36,14 +42,7 @@
     <div class="dropdown  date">
       <button class="dropbtn date" onclick="drop(this.id)">ДД.ММ.ГГГГ</button><button onclick="drop(this.id)" class="material_icons drop_icon">expand_more</button>
       <div class="dropdown-content date"></div>
-    </div><br></br>
-    <div class="dropdown  undefined">
-      <button class="dropbtn" onclick="drop(this.id)">Сколько гостей</button><button onclick="drop(this.id)" class="material_icons drop_icon">expand_more</button>
-      <div class="dropdown-content"><a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-<a href="#contact">Contact</a>
-      </div>
     </div>
-  </body>
+  </body><script src="components/date/date.js"></script>
+<script src="components/dropdown/dropdown.js"></script>
 </html>

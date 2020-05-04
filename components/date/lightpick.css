@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/MaterialIcons/MaterialIcons-Regular.eot'); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url('../../fonts/MaterialIcons/MaterialIcons-Regular.woff2') format('woff2'),
+    url('../../fonts/MaterialIcons/MaterialIcons-Regular.woff') format('woff'),
+    url('../../fonts/MaterialIcons/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+.lightpick {
+  width: 320px;
+  height: 369px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  font-family: Montserrat-Bold,sans-serif;
+}
+
+.lightpick__month {
+  width: 280px;
+  background-color: #FFF;
+}
+
+.lightpick__days {
+  margin-left: 21px;
+  margin-right: 20px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.lightpick__day {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 12px;
+  line-height: 15px;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.lightpick__toolbar{
+  position: absolute;
+  top:20px;
+  width: 320px;
+  z-index: 1;
+}
+
+.lightpick__next-action,.lightpick__previous-action{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: none;
+  background-color: inherit;
+  color:#BC9CFF;
+}
+
+.lightpick__next-action{
+  width: 24px;
+  height: 24px;
+  left:268px;
+}
+
+.lightpick__previous-action{
+  width: 24px;
+  height: 24px;
+  left:13px;
+}
+
+.lightpick.is-hidden {
+  display: none;
+}
+
+.lightpick__month-title {
+  position: absolute;
+  left:86px;
+  top:20px;
+  width: 148px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  height: 24px;
+}
+
+.lightpick__month-title-bar {
+  display: flex;
+  width: 320px;
+  height:24px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lightpick__days-of-the-week {
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  height: 40px;
+}
+
+.lightpick__day-of-the-week {
+  display: flex;
+  width: 40px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  color: #BC9CFF;
+  text-transform: capitalize;
+}
+
+.lightpick__day.is-today {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 50%;
+  color: white
+}
+
+.lightpick__day.is-in-range {
+    border-radius: 0;
+    background: linear-gradient(to bottom, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+    opacity: 0.25;
+}
+
+.lightpick__day.is-end-date.is-in-range{
+  background-image: url("../../svg/end.svg");
+  background-color: rgba(38, 139, 210, 0);
+  background-size: cover;
+  color:white;
+}
+
+.lightpick__day.is-start-date.is-in-range{
+  background-image: url("../../svg/start.svg");
+  background-color: rgba(38, 139, 210, 0);
+  background-size: cover;
+  color:white;
+}
+
+.lightpick__select {
+  font-size: 19px;
+  line-height: 24px;
+  height: 24px;
+  font-style: normal;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  color: #1F2041;
+}
+
+.lightpick__select-months{
+  margin-right: 6px;
+  text-transform: capitalize;
+}
+
+.lightpick__tooltip {
+  display: none;
+}
+
+.lightpick__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lightpick__reset-action,
+.lightpick__apply-action {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  border: none;
+}
+.lightpick__reset-action {
+  color: rgba(31, 32, 65, 0.5);
+  margin-left: 20px;
+}
+
+.lightpick__apply-action {
+  color: #BC9CFF;
+  margin-right: 20px;
+}
+
+.lightpick__close-action{
+  display: none;
+}
+
+.lightpick__day.is-disabled {
+    opacity: 0.38;
+    pointer-events: none;
+}
+
+.lightpick__day.is-previous-month,
+.lightpick__day.is-next-month {
+    opacity: 0.38;
+}
+
+.lightpick__day.lightpick__day.is-in-range:not(.is-disabled) {
+    opacity: 1;
+}
