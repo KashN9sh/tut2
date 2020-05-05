@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <title>Пример страницы</title>
@@ -10,11 +10,16 @@
     <h3>FILTER</h3>
     <p class="text_field subscription">
       <input class="text" placeholder="Email"/><input class="material_icons" type="submit" value="arrow_forward">
-    </p><div class="col-md-5">
-<div class="d-flex">
-<input type="text" id="date-start" class="date">
-<input type="text" id="date-end" class="date">
+    </p><div class="date-t">
+<input type="text" id="date-start"  placeholder="ДД.ММ.ГГГГ">
+<button id="date-start" class="material_icons ">expand_more</button>
 </div>
+<div  class="date-t">
+<input type="text" id="date-end" placeholder="ДД.ММ.ГГГГ">
+<button id="date-end" class="material_icons ">expand_more</button>
+</div><div  class="date-s" >
+<input type="text" id="date" placeholder="ДД.ММ.- ДД.ММ.">
+<button id="date" class="material_icons " >expand_more</button>
 </div>
     <p class="text_field masked">
       <input class="text" type="date"/>
@@ -31,17 +36,13 @@
 <a href="#contact">Contact</a>
       </div>
     </div>
-    <div class="dropdown  date">
-      <button class="dropbtn date" onclick="drop(this.id)">ДД.ММ.ГГГГ</button><button onclick="drop(this.id)" class="material_icons drop_icon">expand_more</button>
-      <div class="dropdown-content date"><a href="#home">Home</a>
+    <div class="dropdown  undefined">
+      <button class="dropbtn" onclick="drop(this.id)">Сколько гостей</button><button onclick="drop(this.id)" class="material_icons drop_icon">expand_more</button>
+      <div class="dropdown-content"><a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
 <a href="#contact">Contact</a>
       </div>
-    </div>
-    <div class="dropdown  date">
-      <button class="dropbtn date" onclick="drop(this.id)">ДД.ММ.ГГГГ</button><button onclick="drop(this.id)" class="material_icons drop_icon">expand_more</button>
-      <div class="dropdown-content date"></div>
     </div>
   </body><script src="components/date/date.js"></script>
 <script src="components/dropdown/dropdown.js"></script>

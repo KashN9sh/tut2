@@ -69,8 +69,8 @@
           prev: 'arrow_back',
           next: 'arrow_forward',
           close: '&times;',
-          reset: 'Reset',
-          apply: 'Apply'
+          reset: 'Очистить',
+          apply: 'Применить'
         },
         tooltip: {
           one: 'day',

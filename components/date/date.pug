@@ -1,7 +1,17 @@
 mixin date(options)
-  <div class="col-md-5">
-    <div class="d-flex">
-      <input type="text" id="date-start" class="date">
-      <input type="text" id="date-end" class="date">
-    </div>
-  </div>
+    if (options.type=="two")
+      <div class="date-t">
+        <input type="text" id="date-start"  placeholder="ДД.ММ.ГГГГ">
+        <button id="date-start" class="material_icons ">expand_more</button>
+      </div>
+      <div  class="date-t">
+        <input type="text" id="date-end" placeholder="ДД.ММ.ГГГГ">
+        <button id="date-end" class="material_icons ">expand_more</button>
+      </div>
+    else
+      <div  class="date-s" >
+        <input type="text" id="date" placeholder="ДД.ММ.- ДД.ММ.">
+        <button id="date" class="material_icons " >expand_more</button>
+      </div>
+    
+    

@@ -1,18 +1,7 @@
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../../fonts/MaterialIcons/MaterialIcons-Regular.eot'); /* For IE6-8 */
-  src: local('Material Icons'),
-    local('MaterialIcons-Regular'),
-    url('../../fonts/MaterialIcons/MaterialIcons-Regular.woff2') format('woff2'),
-    url('../../fonts/MaterialIcons/MaterialIcons-Regular.woff') format('woff'),
-    url('../../fonts/MaterialIcons/MaterialIcons-Regular.ttf') format('truetype');
-}
-
 .lightpick {
+  margin-top: 12px;
+  margin-left: -11px;
   width: 320px;
-  height: 369px;
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
@@ -36,6 +25,7 @@
 }
 
 .lightpick__day {
+  font-family: Montserrat-Light,sans-serif;
   display: flex;
   height: 40px;
   width: 40px;
@@ -91,9 +81,7 @@
 }
 
 .lightpick__month-title {
-  position: absolute;
-  left:86px;
-  top:20px;
+  margin: auto;
   width: 148px;
   font-size: 16px;
   font-weight: normal;
@@ -156,6 +144,10 @@
   color:white;
 }
 
+.is-start-date.is-end-date{
+  border-radius: 50%;
+}
+
 .lightpick__select {
   font-size: 19px;
   line-height: 24px;
@@ -172,6 +164,7 @@
 }
 
 .lightpick__select-months{
+  text-align-last: center;
   margin-right: 6px;
   text-transform: capitalize;
 }
@@ -187,6 +180,7 @@
 
 .lightpick__reset-action,
 .lightpick__apply-action {
+  margin-bottom: 20px;
   margin-top: 20px;
   font-style: normal;
   font-weight: bold;

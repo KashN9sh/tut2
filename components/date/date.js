@@ -1,5 +1,4 @@
-
-var picker = new Lightpick({
+var double = new Lightpick({
     dropdowns:false,
     footer: true,
     field: document.getElementById('date-start'),
@@ -7,9 +6,18 @@ var picker = new Lightpick({
     singleDate: false,
     autoclose:false,
     onSelect: function(start, end){
-        var str = '';
-        str += start ? start.format('Do MMMM YYYY') + ' to ' : '';
-        str += end ? end.format('Do MMMM YYYY') : '...';
-        document.getElementById('result-3').innerHTML = str;
+    }
+});
+
+var single = new Lightpick({
+    field: document.getElementById('date'),
+    singleDate: false,
+    footer: true,
+    dropdowns:false,
+    format:'DD MMM',
+    lang: 'ru',
+    onOpen(){
+      var pick=document.getElementsByClassName("lightpick");
+      pick.classList.add('single');
     }
 });

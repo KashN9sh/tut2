@@ -1,11 +1,8 @@
 @import "lightpick.css";
-.date{
+.date-t{
   height: 44px;
   width: 150px;
   text-indent: 10px;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: Montserrat-Light,sans-serif;
   font-style: normal;
   font-weight: normal;
   text-align: left;
@@ -16,4 +13,50 @@
   box-sizing: border-box;
   border-radius: 4px;
   outline: none;
+  margin:8px;
+}
+
+.date-t input{
+  z-index: 9999;
+  margin-top:10px;
+  border:none;
+  width: 88px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Montserrat-Light,sans-serif;
+  outline: none;
+  background:none;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date-s{
+  height: 44px;
+  width: 266px;
+  text-indent: 10px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  color: rgba(31, 32, 65, 0.75);
+  display: inline-block;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  margin:8px;
+}
+
+.date-s input{
+  z-index: 9999;
+  margin-top:10px;
+  border:none;
+  width: 204px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Montserrat-Light,sans-serif;
+  outline: none;
+  background:none;
+  color: rgba(31, 32, 65, 0.75);
 }
