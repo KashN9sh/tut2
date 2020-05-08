@@ -1,6 +1,7 @@
 @import "components/text_field/text_field.css";
 @import "components/dropdown/dropdown.css";
 @import "components/date/date.css";
+@import "components/list/list.css";
 @font-face {
 	font-family: 'Montserrat-Light';
 	src: url('fonts/Montserrat-Light/Montserrat-Light.eot');

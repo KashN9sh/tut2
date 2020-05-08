@@ -1,15 +1,20 @@
+include ../list/list
+
 mixin dropdown(options)
   -
     var ClassName="dropdown"
     ClassName +="  "+options.type
 
   div(class=ClassName)
-    button.dropbtn(onclick='drop(this.id)',class=options.type)=options.text
+    button.dropbtn.guests(onclick='drop(this.id)',class=options.type)=options.text
     <button onclick="drop(this.id)" class="material_icons drop_icon">expand_more</button>
     div.dropdown-content(class=options.type)
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="#contact">Contact</a>
+      +list({text:'взрослые',id:'0'})
+      +list({text:'дети',id:'1'})
+      +list({text:'младенцы',id:'2'})
+      div.drop_foot
+        button.clear.inviz(onclick='clс()') очистить
+        button.ok применить
+    
   
     

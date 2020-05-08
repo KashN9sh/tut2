@@ -1,0 +1,42 @@
+.text{
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  width: 173px;
+  height: 15px;
+  margin-left: 15px;
+  margin-top: 13px;
+  margin-right: 19px;
+  display: inline-block;
+}
+
+.list_button{
+  font-family: Material Icons,serif;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  height: 30px;
+  width: 30px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  outline: none;
+  color: rgba(31, 32, 65, 0.75);
+  margin-bottom:7px;
+}
+.list_button.zero{
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.5)
+}
+
+.count{
+  width: 32px;
+  font-family: Montserrat-Bold;
+  font-style: normal;
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 15px;
+}

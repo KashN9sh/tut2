@@ -9,7 +9,7 @@
   <body>
     <h3>FILTER</h3>
     <p class="text_field subscription">
-      <input class="text" placeholder="Email"/><input class="material_icons" type="submit" value="arrow_forward">
+      <input class="ph" placeholder="Email"/><input class="material_icons" type="submit" value="arrow_forward">
     </p><div class="date-t">
 <input type="text" id="date-start"  placeholder="ДД.ММ.ГГГГ">
 <button id="date-start" class="material_icons ">expand_more</button>
@@ -22,26 +22,37 @@
 <button id="date" class="material_icons " >expand_more</button>
 </div>
     <p class="text_field masked">
-      <input class="text" type="date"/>
+      <input class="ph" type="date"/>
     </p>
     <p class="text_field undefined">
-      <input class="text" placeholder="Имя"/>
+      <input class="ph" placeholder="Имя"/>
     </p>
     <p class="material_icons">expand_more</p>
     <div class="dropdown  undefined">
-      <button class="dropbtn" onclick="drop(this.id)">Сколько гостей</button><button onclick="drop(this.id)" class="material_icons drop_icon">expand_more</button>
-      <div class="dropdown-content"><a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-<a href="#contact">Contact</a>
-      </div>
-    </div>
-    <div class="dropdown  undefined">
-      <button class="dropbtn" onclick="drop(this.id)">Сколько гостей</button><button onclick="drop(this.id)" class="material_icons drop_icon">expand_more</button>
-      <div class="dropdown-content"><a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-<a href="#contact">Contact</a>
+      <button class="dropbtn guests" onclick="drop(this.id)">Сколько гостей</button><button onclick="drop(this.id)" class="material_icons drop_icon">expand_more</button>
+      <div class="dropdown-content">
+        <div class="list">
+          <p class="text">взрослые</p>
+          <button class="list_button minus zero" id="0" onclick="minus(this.id)">-</button>
+          <p class="count" id="0">0</p>
+          <button class="list_button plus" id="0" onclick="plus(this.id)">+</button>
+        </div>
+        <div class="list">
+          <p class="text">дети</p>
+          <button class="list_button minus zero" id="1" onclick="minus(this.id)">-</button>
+          <p class="count" id="1">0</p>
+          <button class="list_button plus" id="1" onclick="plus(this.id)">+</button>
+        </div>
+        <div class="list">
+          <p class="text">младенцы</p>
+          <button class="list_button minus zero" id="2" onclick="minus(this.id)">-</button>
+          <p class="count" id="2">0</p>
+          <button class="list_button plus" id="2" onclick="plus(this.id)">+</button>
+        </div>
+        <div class="drop_foot">
+          <button class="clear inviz" onclick="clс()">очистить</button>
+          <button class="ok">применить</button>
+        </div>
       </div>
     </div>
   </body><script src="components/date/date.js"></script>
