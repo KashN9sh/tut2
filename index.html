@@ -28,30 +28,55 @@
       <input class="ph" placeholder="Имя"/>
     </p>
     <p class="material_icons">expand_more</p>
-    <div class="dropdown  undefined">
-      <button class="dropbtn guests" onclick="drop(this.id)">Сколько гостей</button><button onclick="drop(this.id)" class="material_icons drop_icon">expand_more</button>
-      <div class="dropdown-content">
+    <div class="dropdown quest big">
+      <button class="dropbtn guests big" onclick="drop(this.id)">Сколько гостей</button>
+      <button class="material_icons drop_icon big" onclick="drop(this.id)">expand_more</button>
+      <div class="dropdown-content big guest_big">
         <div class="list">
-          <p class="text">взрослые</p>
+          <p class="text big">взрослые</p>
           <button class="list_button minus zero" id="0" onclick="minus(this.id)">-</button>
           <p class="count" id="0">0</p>
           <button class="list_button plus" id="0" onclick="plus(this.id)">+</button>
         </div>
         <div class="list">
-          <p class="text">дети</p>
+          <p class="text big">дети</p>
           <button class="list_button minus zero" id="1" onclick="minus(this.id)">-</button>
           <p class="count" id="1">0</p>
           <button class="list_button plus" id="1" onclick="plus(this.id)">+</button>
         </div>
         <div class="list">
-          <p class="text">младенцы</p>
+          <p class="text big">младенцы</p>
           <button class="list_button minus zero" id="2" onclick="minus(this.id)">-</button>
           <p class="count" id="2">0</p>
           <button class="list_button plus" id="2" onclick="plus(this.id)">+</button>
         </div>
         <div class="drop_foot">
           <button class="clear inviz" onclick="clс()">очистить</button>
-          <button class="ok">применить</button>
+          <button class="ok">применить  </button>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown comfort">
+      <button class="dropbtn comforts" onclick="drop(this.id)">Удобства номера</button>
+      <button class="material_icons drop_icon" onclick="drop(this.id)">expand_more</button>
+      <div class="dropdown-content comfort">
+        <div class="list">
+          <p class="text">спальни</p>
+          <button class="list_button minus zero" id="3" onclick="minus(this.id)">-</button>
+          <p class="count" id="3">0</p>
+          <button class="list_button plus" id="3" onclick="plus(this.id)">+</button>
+        </div>
+        <div class="list">
+          <p class="text">кровати</p>
+          <button class="list_button minus zero" id="4" onclick="minus(this.id)">-</button>
+          <p class="count" id="4">0</p>
+          <button class="list_button plus" id="4" onclick="plus(this.id)">+</button>
+        </div>
+        <div class="list">
+          <p class="text">ванные комнаты</p>
+          <button class="list_button minus zero" id="5" onclick="minus(this.id)">-</button>
+          <p class="count" id="5">0</p>
+          <button class="list_button plus" id="5" onclick="plus(this.id)">+</button>
         </div>
       </div>
     </div>

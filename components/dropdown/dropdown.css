@@ -3,7 +3,7 @@
   margin-bottom: 12px;
   padding-right: 0;
   height: 18px;
-  width: 86.1%;
+  width: 80.1%;
   border: none;
   outline: none;
   text-indent: 10px;
@@ -13,7 +13,13 @@
   font-style: normal;
   font-weight: normal;
   text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: rgba(31, 32, 65, 0.75);
+}
+.dropbtn.big{
+  width: 84.5%;
 }
 
 .dropdown:focus-within{
@@ -21,7 +27,7 @@
 }
 
 .dropdown {
-  width: 320px;
+  width: 266px;
   height: 44px;
   position: relative;
   display: inline-block;
@@ -31,8 +37,12 @@
   border-radius: 4px;
 }
 
+.dropdown.big{
+  width: 320px;
+}
+
 .dropdown-content {
-  width: 318px;
+  width: 264px;
   display: none;
   position: absolute;
   right: -1px;
@@ -50,6 +60,11 @@
   text-decoration: none;
   display: block;
 }
+
+.dropdown-content.big{
+  width: 318px;
+}
+
 .show {
   display: block;
 }

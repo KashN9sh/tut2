@@ -6,12 +6,16 @@
   line-height: 15px;
   text-transform: uppercase;
   color: #1F2041;
-  width: 173px;
+  width: 53%;
   height: 15px;
   margin-left: 15px;
   margin-top: 13px;
-  margin-right: 19px;
   display: inline-block;
+}
+
+.text.big{
+  margin-right: 20px;
+  width: 54%;
 }
 
 .list_button{

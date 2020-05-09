@@ -4,17 +4,38 @@ mixin dropdown(options)
   -
     var ClassName="dropdown"
     ClassName +="  "+options.type
+  
+  if(options.type=="guest_big")
+    div.dropdown.quest.big
+      button.dropbtn.guests.big(onclick='drop(this.id)')=options.text
+      button.material_icons.drop_icon.big(onclick='drop(this.id)') expand_more
+      div.dropdown-content.big(class=options.type)
+        +list({text:'взрослые',id:'0',class:'big'})
+        +list({text:'дети',id:'1',class:'big'})
+        +list({text:'младенцы',id:'2',class:'big'})
+        div.drop_foot
+          button.clear.inviz(onclick='clс()') очистить
+          button.ok применить  
+  
+  if(options.type=="guest")
+    div.dropdown.guest
+      button.dropbtn.guests(onclick='drop(this.id)')=options.text
+      button.material_icons.drop_icon(onclick='drop(this.id)') expand_more
+      div.dropdown-content(class=options.type)
+        +list({text:'взрослые',id:'0'})
+        +list({text:'дети',id:'1'})
+        +list({text:'младенцы',id:'2'})
+  if(options.type=="comfort")
+    div.dropdown.comfort
+      button.dropbtn.comforts(onclick='drop(this.id)')=options.text
+      button.material_icons.drop_icon(onclick='drop(this.id)') expand_more
+      div.dropdown-content(class=options.type)
+        +list({text:'спальни',id:'3'})
+        +list({text:'кровати',id:'4'})
+        +list({text:'ванные комнаты',id:'5'})
+    
+  
 
-  div(class=ClassName)
-    button.dropbtn.guests(onclick='drop(this.id)',class=options.type)=options.text
-    <button onclick="drop(this.id)" class="material_icons drop_icon">expand_more</button>
-    div.dropdown-content(class=options.type)
-      +list({text:'взрослые',id:'0'})
-      +list({text:'дети',id:'1'})
-      +list({text:'младенцы',id:'2'})
-      div.drop_foot
-        button.clear.inviz(onclick='clс()') очистить
-        button.ok применить
     
   
     

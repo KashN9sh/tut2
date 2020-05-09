@@ -1,6 +1,6 @@
 mixin list(options)
   div.list
-    p.text=options.text
+    p.text(class=options.class)=options.text
     button.list_button.minus.zero(id=options.id,onclick="minus(this.id)") -
     p.count(id=options.id)=0
     button.list_button.plus(id=options.id,onclick="plus(this.id)") +
